@@ -1,0 +1,25 @@
+@import './config';
+
+body{
+    background-color: $primary-color;
+    color: #fff;
+    min-height: 100vh;
+    font-family: 'Poppins', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: normal;
+}
+
+h1, h2, h3{
+    font-weight: 400;
+}
+
+a{
+    color: #fff;
+    text-decoration: none;
+}
+
+header{
+    position: fixed;
+    z-index: 2;
+    width: 100vh;
+    padding: 1rem;
+}
