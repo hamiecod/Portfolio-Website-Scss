@@ -91,6 +91,27 @@
           transition-timing-function: ease-in-out;
 }
 
+.menu-btn_burger.open {
+  -webkit-transform: rotate(720deg);
+          transform: rotate(720deg);
+  background: transparent;
+}
+
+.menu-btn_burger.open::before {
+  -webkit-transform: rotate(45deg) translate(5px, 8px);
+          transform: rotate(45deg) translate(5px, 8px);
+}
+
+.menu-btn_burger.open::after {
+  width: 28px;
+  -webkit-transform: rotate(-45deg) translate(2px, -7px);
+          transform: rotate(-45deg) translate(2px, -7px);
+}
+
+html {
+  font-size: 13.675px;
+}
+
 body {
   background-color: #272727;
   color: #fff;
