@@ -6,3 +6,18 @@ $secondary-color: #ff652f;
     margin: 0px;
     padding: 0px;
 }
+
+@mixin transition-ease{
+    transition: all;
+    transition-duration: 0.5s;
+    transition-timing-function: ease-in-out;
+}
+
+@function set-text-color($color){
+    @if (lightness($color) > 40%){
+        @return #000;
+    }
+    @else{
+        @return #fff;
+    }
+}

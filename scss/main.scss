@@ -1,11 +1,16 @@
-@import './config';
+@import './config', './home', './menu';
+
+// html{
+//     font-size: 10px;
+// }
 
 body{
     background-color: $primary-color;
-    color: #fff;
+    color: set-text-color($primary-color);
     min-height: 100vh;
     font-family: 'Poppins', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    line-height: normal;
+    line-height: 1;
+    // '1' and '1em' mean the same || a unitless number is the value multiplied with the current font size
 }
 
 h1, h2, h3{
@@ -13,13 +18,56 @@ h1, h2, h3{
 }
 
 a{
-    color: #fff;
+    color: set-text-color($primary-color);
     text-decoration: none;
 }
 
+// header containing the navbar
 header{
     position: fixed;
     z-index: 2;
-    width: 100vh;
+    width: 100%;
     padding: 1rem;
+}
+
+.menu-nav{
+    display: flex;
+
+    #{&}_item{
+        list-style: none;
+    }
+}
+
+main{
+    height: 100%;
+    width: 100%;
+
+    // social icons
+    .social-icons{
+        position: fixed;
+        bottom: 1rem;
+        left: 1rem;
+
+        a{
+            padding: 0.4rem;
+            @include transition-ease;
+
+            &:hover{
+                color: $secondary-color;
+            }
+            // i{
+            //     font-size: 2.4rem;
+            // }
+        }
+    }
+}
+
+footer{
+    font-size: 1rem;
+    position: fixed;
+    bottom: 0.4rem;
+    right: 1rem;
+    text-align: right;
+    padding: 1rem;
+    color: set-text-color($primary-color);
 }
