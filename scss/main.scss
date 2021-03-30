@@ -1,14 +1,14 @@
 @import './config', './home', './menu';
 
 html{
-    font-size: 13.675px;
+    font-size: 10px;
 }
 
 body{
     background-color: $primary-color;
     color: set-text-color($primary-color);
     min-height: 100vh;
-    font-family: 'Poppins', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Playfair Display', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     line-height: 1;
     // '1' and '1em' mean the same || a unitless number is the value multiplied with the current font size
 }
@@ -28,14 +28,6 @@ header{
     z-index: 2;
     width: 100%;
     padding: 1rem;
-}
-
-.menu-nav{
-    display: flex;
-
-    #{&}_item{
-        list-style: none;
-    }
 }
 
 main{
