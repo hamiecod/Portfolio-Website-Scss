@@ -1,0 +1,67 @@
+.about{
+    padding-bottom: 2rem;
+
+    // the upper part containing the image and the bio para
+    &_bio-image{
+        height: 50vh;
+        width: 100%;
+        background:
+        linear-gradient(
+            to right, 
+            rgba($primary-color, 0.7), 
+            rgba($primary-color, 0.2)
+        ),
+        url('../img/model-1.png') center top;
+        background-size: cover;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-end;
+    }
+
+    // the bio para
+    &_bio{
+        width: 80%;
+        text-align: center;
+        margin-bottom: 2rem;
+
+        .text-secondary{
+            padding-bottom: 1rem;
+        }
+    }
+
+    // the div containing all jobs
+    .jobs{
+        width: 60vw;
+        margin: 2rem auto;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-gap: 2rem;
+ 
+        &_job{
+            background: lighten($primary-color, 10%);
+            padding: 0.5rem;
+            border-bottom: 5px solid $secondary-color;
+
+            h2, h3{
+                margin-bottom: 0.5rem 0rem;
+            }
+
+            h6{
+                margin: 0.3rem 0rem;
+                font-size: 0.8rem;
+            }
+        }
+    }
+
+    .social-icons{
+        display: flex;
+        flex-direction: column;
+    }
+
+    footer{
+        transform: 
+            rotate(90deg)
+            translate(-3rem, -4.2rem);
+    }
+}
