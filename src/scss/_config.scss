@@ -21,3 +21,9 @@ $secondary-color: #ff652f;
         @return #fff;
     }
 }
+
+// fonts
+@font-face {
+    font-family: Badaboom BB;
+    src: url(/src/fonts/Badaboom-BB.TTF);
+}
