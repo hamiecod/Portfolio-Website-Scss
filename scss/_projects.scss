@@ -1,0 +1,108 @@
+.projects {
+    padding-bottom: 2rem;
+
+    // the upper part containing the image and the bio para
+    &_bio-image{
+        height: 30vh;
+        width: 100%;
+        background:
+        linear-gradient(
+            to right, 
+            rgba($primary-color, 0.7), 
+            rgba($primary-color, 0.2)
+        ),
+        url('../img/model-1.png') center top;
+        background-size: cover;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-end;
+
+        // the heading: My Projects
+        .text-secondary{
+            font-size: 2rem;
+            margin-bottom: 2rem;
+        }
+    }
+
+    // the div containing all projects
+    &_items{
+        width: 60vw;
+        margin: 2rem auto;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-gap: 2rem; 
+    }
+    // single project
+    &_item{
+        position: relative;
+        border-bottom: 5px solid $secondary-color;
+        overflow: hidden;
+        cursor: pointer;
+
+        // the project image
+        img{
+            width: 100%;
+        }
+
+        // the secondary color overlay
+        &::after{
+            content: "";
+            position: absolute;
+            top: 100%;
+            left: 0rem;
+            height: 100%;
+            width: 100%;
+            background-color: $secondary-color;
+            opacity: 0;
+            @include transition-ease;
+        }
+
+        &:hover{
+            // targetting '.project_item::after'
+            &::after{
+                top: 0%;
+                opacity: 0.9;
+            }
+            .projects_btn{
+                opacity: 1;
+            }
+        }
+    }
+
+    &_btns{
+        position: absolute;
+        top: 0%;
+        height: 100%;
+        width: 100%;
+        z-index: 1;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr );
+        align-items: center;
+        text-align: center;
+    }
+
+    &_btn{
+        // the button is hidden until it is hovered upon
+        opacity: 0;
+        color: set-text-color($secondary-color);
+        @include transition-ease;
+
+        &:hover{
+            color: set-text-color(
+                set-text-color($secondary-color)
+            );
+        }
+    }
+
+    .social-icons{
+        display: flex;
+        flex-direction: column;
+    }
+
+    footer{
+        transform: 
+            rotate(90deg)
+            translate(-3rem, -4.2rem);
+    }
+}

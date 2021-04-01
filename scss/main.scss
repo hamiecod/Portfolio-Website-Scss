@@ -8,7 +8,7 @@ body{
     background-color: $primary-color;
     color: set-text-color($primary-color);
     min-height: 100vh;
-    font-family: 'Playfair Display', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Poppins', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     line-height: 1;
     // '1' and '1em' mean the same || a unitless number is the value multiplied with the current font size
 }
