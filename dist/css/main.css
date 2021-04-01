@@ -5,6 +5,31 @@
   padding: 0px;
 }
 
+@font-face {
+  font-family: Badaboom BB;
+  src: url(/src/fonts/Badaboom-BB.TTF);
+}
+
+@font-face {
+  font-family: Poppins;
+  src: url(/src/fonts/Poppins-Regular.ttf);
+}
+
+@font-face {
+  font-family: Playfair Display;
+  src: url(/src/fonts/PlayfairDisplay-VariableFont_wght.ttf);
+}
+
+@font-face {
+  font-family: Spartan;
+  src: url(/src/fonts/Spartan-VariableFont_wght.ttf);
+}
+
+@font-face {
+  font-family: Titillium Web;
+  src: url(/src/fonts/TitilliumWeb-Regular.ttf);
+}
+
 .home {
   height: 100vh;
   padding-top: 40vh;
@@ -421,7 +446,7 @@ body {
   background-color: #272727;
   color: #fff;
   min-height: 100vh;
-  font-family: 'BadaBoom BB';
+  font-family: 'Titillium Web';
   line-height: 1;
 }
 
