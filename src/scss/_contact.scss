@@ -1,0 +1,35 @@
+.contact{
+    height: 100vh;
+    padding-top: 30vh;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    background:
+    linear-gradient(
+        to right, 
+        rgba($primary-color, 0.7), 
+        rgba($primary-color, 0.2)
+    ),
+    url('../img/model-1.png') center center;
+    background-size: cover;
+    // can also use ::before instead of linear gradient
+
+    h2{
+        font-size: 3rem;
+        margin-bottom: 2rem;
+    }
+
+    &_list{
+        display: grid;
+        grid-template-areas: 1fr;
+        grid-gap: 2rem;
+        font-size: 1.5rem;
+    }
+
+    .social-icons{
+        position: initial;
+        margin-top: 2.3rem;
+    }
+}

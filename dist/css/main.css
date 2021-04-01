@@ -400,8 +400,8 @@
   z-index: 1;
   display: -ms-grid;
   display: grid;
-  /* -ms-grid-columns: (1fr)[2]; */
-      grid-template-columns: repeat(2, 1fr);
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -436,6 +436,44 @@
 .projects footer {
   -webkit-transform: rotate(90deg) translate(-3rem, -4.2rem);
           transform: rotate(90deg) translate(-3rem, -4.2rem);
+}
+
+.contact {
+  height: 100vh;
+  padding-top: 30vh;
+  overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  position: relative;
+  background: -webkit-gradient(linear, left top, right top, from(rgba(39, 39, 39, 0.7)), to(rgba(39, 39, 39, 0.2))), url("../img/model-1.png") center center;
+  background: linear-gradient(to right, rgba(39, 39, 39, 0.7), rgba(39, 39, 39, 0.2)), url("../img/model-1.png") center center;
+  background-size: cover;
+}
+
+.contact h2 {
+  font-size: 3rem;
+  margin-bottom: 2rem;
+}
+
+.contact_list {
+  display: -ms-grid;
+  display: grid;
+      grid-template-areas: 1fr;
+  grid-gap: 2rem;
+  font-size: 1.5rem;
+}
+
+.contact .social-icons {
+  position: initial;
+  margin-top: 2.3rem;
 }
 
 html {
