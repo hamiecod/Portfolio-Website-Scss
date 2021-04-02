@@ -1,6 +1,6 @@
 .contact{
     height: 100vh;
-    padding-top: 30vh;
+    padding-top: 35vh;
     overflow: hidden;
     display: flex;
     align-items: center;
@@ -12,7 +12,7 @@
         rgba($primary-color, 0.7), 
         rgba($primary-color, 0.2)
     ),
-    url('../img/model-1.png') center center;
+    url('../img/model-1.png') top center;
     background-size: cover;
     // can also use ::before instead of linear gradient
 
@@ -30,6 +30,6 @@
 
     .social-icons{
         position: initial;
-        margin-top: 2.3rem;
+        margin-top: 2.52rem;
     }
 }

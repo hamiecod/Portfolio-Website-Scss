@@ -1,8 +1,8 @@
-@import './config', './home', './menu', './about', './projects', './contact';
-
 html{
     font-size: 10px;
 }
+@import './config', './home', './menu', './about', './projects', './contact', './responsive';
+
 
 body{
     background-color: $primary-color;

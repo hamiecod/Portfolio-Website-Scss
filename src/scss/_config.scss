@@ -47,3 +47,21 @@ $secondary-color: #ff652f;
     font-family: Titillium Web;
     src: url(/src/fonts/TitilliumWeb-Regular.ttf);
 }
+
+@mixin media-md{
+    @media screen and (min-width: 768px){
+        @content;
+    }
+}
+
+@mixin media-lg{
+    @media screen and (min-width: 1024px){
+        @content;
+    }
+}
+
+@mixin media-xl{
+    @media screen and (min-width: 1400px){
+        @content;
+    }
+}
