@@ -3,6 +3,7 @@ html{
 }
 @import './config', './home', './menu', './about', './projects', './contact', './responsive';
 
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web&display=swap');
 
 body{
     background-color: $primary-color;

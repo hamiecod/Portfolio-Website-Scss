@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Titillium+Web&display=swap");
 html {
   font-size: 10px;
 }
@@ -201,6 +202,11 @@ html {
 .nav .menu-nav_item.open {
   -webkit-transform: translateX(0vw);
           transform: translateX(0vw);
+}
+
+.nav .menu-nav_item.close {
+  -webkit-transform: translateX(100vw);
+          transform: translateX(100vw);
 }
 
 .nav .menu-nav_item.active > a {

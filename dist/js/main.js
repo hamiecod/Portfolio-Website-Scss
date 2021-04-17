@@ -18,6 +18,10 @@ function toggleMenu(){
             element.classList.add('open');
         }
         
+        hamburger.classList.remove('close');
+        nav.classList.remove('close');
+        menuNav.classList.remove('close');
+        navItems.forEach(item => item.classList.remove('close'));
         showMenu = true;
     }
     else{
@@ -25,7 +29,15 @@ function toggleMenu(){
         nav.classList.remove('open');
         menuNav.classList.remove('open');
         navItems.forEach(item => item.classList.remove('open'));
-
+        
+        hamburger.classList.add('close');
+        nav.classList.add('close');
+        menuNav.classList.add('close');
+        for (let items = 0; items < navItems.length; items++) {
+            const element = navItems[items];
+            element.classList.add('close');
+        }
+        
         showMenu = false;
     }
 }

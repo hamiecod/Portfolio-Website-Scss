@@ -93,6 +93,9 @@
             &.open{
                 transform: translateX(0vw);
             }
+            &.close{
+                transform: translateX(100vw);
+            }
 
             &.active > a{
                 color: $secondary-color;
@@ -116,5 +119,8 @@
 @for $i from 1 through 4{
     .menu-nav_item:nth-child(#{$i}){
         transition-delay: ($i * 0.1) + 0.15s;
+        // &.close{
+        //     transition-delay: .05s + (#{$i} * 0.05);
+        // }
     }
 }
